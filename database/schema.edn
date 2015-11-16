@@ -1,0 +1,22 @@
+;; films
+[{:db/id #db/id[:db.part/db]
+  :db/ident :film/id
+  :db/index true
+  :db/valueType :db.type/uuid
+  :db/cardinality :db.cardinality/one
+  :db/doc "A film's id"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :film/title
+  :db/index true
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A film's title"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :film/release-date
+  :db/index true
+  :db/valueType :db.type/instant
+  :db/cardinality :db.cardinality/one
+  :db/doc "A film's theatrical release date"
+  :db.install/_attribute :db.part/db}]
